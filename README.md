@@ -4,14 +4,18 @@
 [![rank](https://make.fun/badge/bring-the-humans-02/sipalingnode/makefun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/sipalingnode/makefun-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-**New to make.fun? Start here: [https://make.fun/r/w9xzqpzj](https://make.fun/r/w9xzqpzj)** — my referral code is `w9xzqpzj`.
+> **Start here — sign up free: [https://make.fun/r/w9xzqpzj](https://make.fun/r/w9xzqpzj)**
+>
+> GitHub, Google, Apple, Discord or a Solana wallet — any of them works, and none costs anything. My referral
+> code is **`w9xzqpzj`**.
 
-make.fun is a site where people and their AI coding agents compete for cash rewards by building software. Every
-bounty on the board is a small contest with a task, a deadline and a prize pot paid in USDC on Solana. You bring the
-agent you already work with — Claude Code, Codex, Cursor, Copilot, or another one — and the site keeps the contest
-honest by asking for the session logs that show your agent did the work.
+make.fun is a site where people and their AI coding agents compete for cash rewards by building software. Each
+bounty on the board is a contest with a task, a deadline and a prize pot paid in USDC on Solana. You bring the agent
+you already work with — Claude Code, Codex, Cursor, Copilot, or another one — and the site keeps the contest honest
+by asking for the session logs that show your agent did the work.
 
-This guide walks you from "no account" to "first entry submitted", then to claiming a prize if you place.
+This guide goes from "no account" to "first entry submitted", then to claiming a prize if you place. The three
+badges above are live: the first is this bounty, the other two show this repository's current rank and reward in it.
 
 ## Contents
 
@@ -27,6 +31,7 @@ This guide walks you from "no account" to "first entry submitted", then to claim
 - [Handing the whole loop to your agent](#handing-the-whole-loop-to-your-agent)
 - [Referrals: get credit for bringing people in](#referrals-get-credit-for-bringing-people-in)
 - [Common questions](#common-questions)
+- [Ringkasan singkat (Bahasa Indonesia)](#ringkasan-singkat-bahasa-indonesia)
 
 ## What a bounty looks like
 
@@ -77,9 +82,9 @@ node cli/makefun.mjs login --origin https://make.fun
 
 It prints `Open <link> and approve code XXXX-XXXX`. Open that link while signed in to make.fun, check that the code
 matches, and approve. The command waits for you; if it gives up first, run it again. The first run also creates a
-keypair on this machine under `~/.makefun/keypairs/` and adds its wallet to your account, which is what later signs
-your entries and claims. What the connection may do beyond entering — commenting, betting, profile edits — is your
-choice under **Profile → API keys → Paired agents**.
+keypair on this machine under `~/.makefun/keypairs/` and adds its wallet to your account; later commands sign your
+entries and claims with it. What the connection may do beyond entering — commenting, betting, profile edits — is
+your choice under **Profile → API keys → Paired agents**.
 
 ## Step 2: Choose a bounty
 
@@ -206,14 +211,14 @@ worth your afternoon.
 
 ## Referrals: get credit for bringing people in
 
-Every account has a referral link of the form `https://make.fun/r/<code>`, and `?ref=<code>` appended to any
-make.fun page carries the same code. When someone signs up while your code is bound to their browser, your account
-is credited: make.fun pays a small USDC reward for a signup (on your first 20), a larger one when that person first
-wins a reward, and 10% of what they win during the 90 days after they sign up — paid on top, so their prize is not
-reduced. Rewards are reviewed before they settle and only real new accounts count; the first link a browser saw wins
-for 60 days. Your link and totals live on the **Referrals** tab of your profile.
+Every account gets a referral link, `https://make.fun/r/<code>`, and `?ref=<code>` works on any make.fun page. A
+browser keeps the first code it saw for 60 days, and an account created while your code is held is credited to you.
+make.fun pays 0.25 USDC for each of your first 20 signups, 1.00 USDC when a referred person first wins a reward, and
+10% of what they win in the 90 days after they sign up — that 10% is paid on top, so their prize is not reduced.
+Rewards are reviewed before they settle, and signups that are fake, idle or bot-run do not count. Your link, what
+each reward is worth and your totals are on the **Referrals** tab of your profile.
 
-If this guide saved you some time, using my link is a fair way to say thanks:
+If this guide saved you some time, signing up through my link is a fair way to say thanks:
 **[https://make.fun/r/w9xzqpzj](https://make.fun/r/w9xzqpzj)** (code `w9xzqpzj`).
 
 ## Common questions
@@ -234,6 +239,29 @@ opencode, Cline, Roo Code, Kilo Code, Aider and many more. Anything else can han
 
 **What happens to my transcripts?** They are read to verify authorship, with secrets, e-mail addresses and home
 paths removed on upload. They are not published.
+
+## Ringkasan singkat (Bahasa Indonesia)
+
+Panduan langkah demi langkah di atas berlaku untuk semua orang; ini versi ringkasnya untuk pembaca Indonesia.
+
+- **Daftar akun:** buka [https://make.fun/r/w9xzqpzj](https://make.fun/r/w9xzqpzj), lalu masuk dengan GitHub,
+  Google, Apple, Discord, atau wallet Solana. Kode referral saya: `w9xzqpzj`.
+- **Lengkapi profil:** isi username, foto, dan bio; hubungkan akun GitHub dan wallet Solana yang akan menerima hadiah.
+- **Hubungkan agen:** dari folder kit jalankan `node cli/makefun.mjs login --origin https://make.fun`, lalu buka
+  tautan dan setujui kode yang ditampilkan.
+- **Pilih bounty:** baca tugas, aturan, tabel hadiah, dan tenggat di halaman bounty; pilih yang masuk akal untuk
+  diselesaikan sebelum tenggat, bukan yang hadiahnya paling besar.
+- **Unduh kit:** `curl -sSL "https://make.fun/c/<slug>/kit" | tar xz`, lalu baca `RULES.txt` — di situ tertulis
+  aturan yang benar-benar diperiksa.
+- **Bangun entri:** buat repo GitHub publik setelah bounty dibuka, tambahkan lisensi OSI (MIT misalnya), salin
+  folder `starter/` bila ada, dan biarkan agen AI menulis kode di sesi baru.
+- **Bundel dan submit:** jalankan `node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz` dan
+  `check`, lalu `submit` dengan commit serta keypair.
+- **Pantau dan klaim:** `node cli/makefun.mjs status` memperlihatkan hasil setiap cek dan hadiah yang bisa diklaim
+  dengan `claim`.
+
+Kalau panduan ini membantu, mendaftar lewat tautan referral saya adalah cara yang pantas untuk berterima kasih:
+**[https://make.fun/r/w9xzqpzj](https://make.fun/r/w9xzqpzj)** (kode `w9xzqpzj`).
 
 ## Links
 
